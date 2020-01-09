@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="air.ico" type="image/x-icon" /> 
+<title>Book a Flight through Air Zephyr</title>
+<style type="text/css">
+body {
+	background-color: #F5DE81;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<link href="AZStyles.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<p><span class="upper_squares"><img src="Assets/AZ_Banner.png" alt="az_banner" width="923" height="136" usemap="#Map" border="0" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="243,9,595,51" href="index.html" />
+    </map>
+    <br />
+</span></p>
+<ul id="MenuBar1" class="MenuBarHorizontal">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Jobs.html" class="MenuBarItemSubmenu">Jobs</a>
+    <ul>
+      <li><a href="AirplanePrepandTOStaffApp.html">Airplane Preperation and Take Off Staff Application</a></li>
+      <li><a href="AirportStaffApp.html">Airport Staff Application</a></li>
+      <li><a href="On-AirplaneStaffApp.html">On Airplane Staff Application</a></li>
+    </ul>
+  </li>
+  <li><a href="Schedule.html" class="MenuBarItemSubmenu">Schedule</a>
+    <ul>
+      <li><a href="Booking.html">Book a Flight</a></li>
+    </ul>
+  </li>
+  <li><a href="FrequentFlyers.html">Frequent Flyers</a></li>
+  <li><a href="ContactUs.html">Contact Us</a></li>
+</ul>
+<p><span class="upper_squares">  <br />
+</span></p>
+<hr />
+<p class="child_text"><strong>Book a Flight:</strong></p>
+<form action="" method="post" name="form6" class="child_text" id="form6">
+  <p>What type of trip will this be?:<br />
+  </p>
+  <table width="200">
+    <tr>
+      <td><label>
+        <input type="checkbox" name="TripType" value="round_trip" id="TripType_0" />
+        Round Trip</label></td>
+    </tr>
+    <tr>
+      <td><label>
+        <input type="checkbox" name="TripType" value="one_way" id="TripType_1" />
+        One Way</label></td>
+    </tr>
+  </table>
+  <br />
+Where will you be travelling from, and where would you like to go?
+
+
+  From:
+<input type="text" name="From" id="From" />
+<label for="From"></label>
+<br />
+To:
+<input type="text" name="From2" id="From2" />
+<label for="From2"></label>
+<p>When will you depart and when will you return? (If you are making a one way trip, please answer N/A):<br />
+</p>
+<p>Depart:
+  <label for="Depart"></label>
+  <input type="text" name="Depart" id="Depart" />
+  <br />
+  Time of Departure: <br />
+  <label for="time of day"></label>
+  <select name="time of day" size="1" id="time of day">
+    <option>All Day</option>
+    <option>Early Morning</option>
+    <option>Morning</option>
+    <option>Noon</option>
+    <option>Afternoon</option>
+    <option>Early Evening</option>
+    <option>Evening</option>
+  </select>
+  <br />
+  <br />
+  Return:
+  <label for="Depart"></label>
+  <input type="text" name="Depart2" id="Depart" />
+  <br />
+  Time of Return:<br />
+  <select name="time of day2" size="1" id="time of day2">
+    <option>All Day</option>
+    <option>Early Morning</option>
+    <option>Morning</option>
+    <option>Noon</option>
+    <option>Afternoon</option>
+    <option>Early Evening</option>
+    <option>Evening</option>
+  </select>
+  <br />
+</p>
+<p>Amount of Passengers:
+  <label for="numbers"></label>
+  <input type="text" name="numbers" id="numbers" />
+  <br />
+</p>
+<p>Which type of seating?<br />
+</p>
+<table width="200">
+  <tr>
+    <td><label>
+      <input type="checkbox" name="CheckboxGroup1" value="basic" id="CheckboxGroup1_0" />
+      Basic Economy</label></td>
+  </tr>
+  <tr>
+    <td><label>
+      <input type="checkbox" name="CheckboxGroup1" value="main" id="CheckboxGroup1_1" />
+      Main Class</label></td>
+  </tr>
+  <tr>
+    <td><label>
+      <input type="checkbox" name="CheckboxGroup1" value="first" id="CheckboxGroup1_2" />
+      First Class</label></td>
+  </tr>
+</table>
+<p>Finally, to process your billing and payment info we will need your email address:<br />
+</p>
+<p>
+  <label for="email"></label>
+  <input type="text" name="email" id="email" />
+</p>
+<p>Thank you so much, and we can't wait to fly with you!<br />
+  <input type="submit" name="Submit" id="Submit" value="Submit" />
+  <br />
+</p>
+</form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
